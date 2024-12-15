@@ -1,0 +1,8 @@
+import random
+import string
+charsum=''
+
+for i in range(5):
+    allchar = string.ascii_lowercase + string.ascii_uppercase + string.digits
+    charsum+=random.choice(allchar)
+print(charsum)
