@@ -1,0 +1,21 @@
+a,n=input().split()
+list=[]
+a=int(a)
+n=int(n)
+q=0
+i=0
+sum=0
+while n!=0:
+    t=n*a+q
+    q=t//10
+    g=t%10
+    list.append(g)
+    n-=1
+    i+=1
+if q!=0:
+    list.append(q)
+    i+=1
+
+for j in range(i):
+    sum+=list[j]*10**j
+print(f"s={sum}")
